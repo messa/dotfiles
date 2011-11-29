@@ -98,5 +98,9 @@ fi
 alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
+alias c='cd'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias sn='svn diff | colordiff | less -R'
 
 
