@@ -27,7 +27,26 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
 fi
 
 # color prompt
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+prompt_hostname_color='32'
+case "$(uname --nodename | md5sum | head -c 1)" in
+    '0') prompt_hostname_color='30' ;;
+    '1') prompt_hostname_color='31' ;;
+    '2') prompt_hostname_color='32' ;;
+    '3') prompt_hostname_color='33' ;;
+    '4') prompt_hostname_color='34' ;;
+    '5') prompt_hostname_color='35' ;;
+    '6') prompt_hostname_color='36' ;;
+    '7') prompt_hostname_color='37' ;;
+    '8') prompt_hostname_color='30' ;;
+    '9') prompt_hostname_color='31' ;;
+    'a') prompt_hostname_color='32' ;;
+    'b') prompt_hostname_color='33' ;;
+    'c') prompt_hostname_color='34' ;;
+    'd') prompt_hostname_color='35' ;;
+    'e') prompt_hostname_color='36' ;;
+    'f') prompt_hostname_color='37' ;;
+esac
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;${prompt_hostname_color}m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
