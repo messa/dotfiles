@@ -4,19 +4,20 @@ set -e
 set -x
 
 sudo aptitude install \
-	apt-file \
-	build-essential \
-	colordiff \
-	colorgcc \
-	git \
-	htop \
-	ifstat \
-	mc \
-	python3 \
-	python3-setuptools \
-	subversion \
-	tree \
-	vim \
+    apt-file \
+    build-essential \
+    colordiff \
+    colorgcc \
+    git \
+    htop \
+    ifstat \
+    mc \
+    python3 \
+    python3-setuptools \
+    strace \
+    subversion \
+    tree \
+    vim \
 
 sudo apt-file update
 
