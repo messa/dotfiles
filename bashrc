@@ -96,6 +96,6 @@ alias c='cd'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias sn='svn diff | colordiff | less -R'
-alias g="git log --graph --color --decorate --all --pretty='format:%Cred%h%Cgreen%d%Creset %an: %s'"
+alias g="git log --graph --color --decorate --all --pretty=format:'%Cred%h%Creset [%ai]%Cgreen%d%Creset %an: %s' | sed 's/:[0-6][0-9] +0[12]00//' | less -R"
 
 
