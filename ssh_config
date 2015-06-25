@@ -1,0 +1,7 @@
+
+# Don't forget to mkdir /ssh/cm
+
+Host *
+ControlMaster auto
+ControlPath ~/.ssh/cm/%r@%h:%p
+ControlPersist 10m
