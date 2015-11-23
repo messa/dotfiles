@@ -1,5 +1,10 @@
 
-alias ls='ls --color'
+if [ -x /opt/local/bin/gls ]; then
+    alias ls='gls --color'
+else
+    alias ls='ls --color'
+fi
+
 alias ll='ls -ahlF'
 alias l='ls -AF'
 
