@@ -1,5 +1,11 @@
 
-# Don't forget to mkdir /ssh/cm
+# SSH Client Configuration
+# ========================
+
+# Multiplexing
+# ------------
+
+# Don't forget to mkdir ~/.ssh/cm
 
 Host *
 ControlMaster auto

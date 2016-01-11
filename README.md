@@ -19,5 +19,4 @@ To install `bash_stuff`, add this to your `~/.bashrc` or `~/.bash_profile`:
         . ~/code/dotfiles/bash_stuff
     fi
 
-
 See also https://github.com/messa/tips
