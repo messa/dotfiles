@@ -10,4 +10,4 @@
 Host *
 ControlMaster auto
 ControlPath ~/.ssh/cm/%r@%h:%p
-ControlPersist 10m
+ControlPersist 30m
