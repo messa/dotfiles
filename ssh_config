@@ -11,3 +11,5 @@ Host *
 ControlMaster auto
 ControlPath ~/.ssh/cm/%r@%h:%p
 ControlPersist 30m
+
+# Bitbucket: https://bitbucket.org/site/master/issues/13465/please-enable-ssh-multiplexing-back
