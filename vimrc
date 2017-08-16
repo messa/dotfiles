@@ -12,8 +12,7 @@ set shiftwidth=4     " sirka odsazeni
 set tabstop=4        " sirka tabulatoru
 set expandtab        " mezery misto tabulatoru
 set smarttab         " backspace snizi odsazeni
-set cindent          " chytre odsazovani
+set autoindent       " chytre odsazovani
 set hlsearch         " zvyraznovani pri hledani
 set number           " cisla radku
 set backspace=indent,eol,start
-
