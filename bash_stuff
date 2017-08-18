@@ -1,5 +1,17 @@
+# Useful bash aliases
+# ===================
+
+# How to configure bash so this file is used:
+#
+# 1. checkout this repo, for example in ~/code/dotfiles
+# 2. add to ~/.bashrc:
+#
+#    if [ -f ~/code/gh/dotfiles/bash_stuff ]; then
+#      . ~/code/gh/dotfiles/bash_stuff
+#    fi
 
 if [ -x /opt/local/bin/gls ]; then
+    # GNU version of "ls" on macOS via Macports
     alias ls='gls --color'
 else
     alias ls='ls --color'
@@ -16,7 +28,7 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-alias gf='git fetch --all --prune'
+alias gf='git fetch --all --prune --recurse-submodules'
 alias gg='git grep'
 alias g="git log --graph --color --decorate --all --pretty=format:'%Cred%h%Creset [%ai]%Cgreen%d%Creset %an: %s' | sed 's/:[0-6][0-9] +0[12]00//' | less -R"
 # note: "tig" is also good CLI tool for browsing git history - https://www.atlassian.com/blog/git/git-tig
