@@ -1,5 +1,4 @@
-
-" Link/copy this file to ~/.vimrc
+" Vim configuration - link/copy this file to ~/.vimrc
 
 syntax enable
 colors slate
