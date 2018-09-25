@@ -30,6 +30,6 @@ alias egrep='egrep --color=auto'
 
 alias gf='git fetch --all --prune --recurse-submodules'
 alias gg='git grep'
-alias g="git log --graph --color --decorate --all --pretty=format:'%Cred%h%Creset [%ai]%Cgreen%d%Creset %an: %s' | sed 's/:[0-6][0-9] +0[12]00//' | less -R"
-# note: "tig" is also good CLI tool for browsing git history - https://www.atlassian.com/blog/git/git-tig
+#alias g="git log --graph --color --decorate --all --pretty=format:'%Cred%h%Creset [%ai]%Cgreen%d%Creset %an: %s' | sed 's/:[0-6][0-9] +0[12]00//' | less -R"
+alias g='tig --all'
 
